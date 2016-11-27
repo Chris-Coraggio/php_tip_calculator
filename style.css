@@ -1,0 +1,14 @@
+h2{
+	text-align: center;
+}
+
+#content{
+	align-items: center;
+}
+
+#container{
+	background-color: #33ccff;
+	width: 500px;
+	height: 500px;
+	text-align: center;
+}
