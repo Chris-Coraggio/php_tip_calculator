@@ -11,4 +11,9 @@ h2{
 	width: 500px;
 	height: 500px;
 	text-align: center;
+	border-style: solid;
+	border-width: medium;
+}
+
+#results{
 }

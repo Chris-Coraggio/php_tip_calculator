@@ -21,17 +21,15 @@ for ($percent = 10; $percent < 25; $percent += 5) {
 				<br>
 				<input id="submit_button" type="submit">
 			</form>
-		</div>
-	</div>
-
-	<?php
-function showTip() {
+			<div id="results">
+				<?php
+if ("POST" === $_SERVER["REQUEST_METHOD"] && $_POST["subtotal"] > 0 && $_POST["percentage"] !== null) {
 	$total = (1 + (double) $_POST["percentage"]) * $_POST["subtotal"];
 	$tip = ($total - $_POST["subtotal"]);
-	echo "<div class=\"results\"> <br>Tip: " . $tip . "<br>Total: " . $total;
-}
-if (isset($_POST)) {
-	showTip();
+	echo "<div class=\"results\"> <br>Tip: $" . sprintf("%0.2f", $tip) . "<br>Total: $" . sprintf("%0.2f", $total);
 }
 ?>
+			</div>
+		</div>
+	</div>
 </body>
