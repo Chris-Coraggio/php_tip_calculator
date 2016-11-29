@@ -13,8 +13,8 @@ The following **required** functionality is complete:
 * [X] Tip percentage choices use a PHP loop to output three radio buttons.
 * [X] PHP code sets reasonable default values for the form.
 * [X] PHP code confirms the presence and correct format of submitted values.
-* [ ] Page indicates any form errors which need to be fixed.
-* [ ] Submitted form values are retained when errors or results are shown.
+* [X] Page indicates any form errors which need to be fixed.
+* [X] Submitted form values are retained when errors or results are shown.
 
 The following **optional** features are implemented:
 * [ ] Add support for custom tip percentage
